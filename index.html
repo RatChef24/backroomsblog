@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backrooms</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #ddd;
+            font-family: "Helvetica", sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        h1, h2, p{
+            color: #000;
+        }
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        header, footer {
+            
+            padding: 10px 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            flex-grow: 1; /* Fa in modo che la sezione di contenuto riempia lo spazio disponibile */
+        }
+        .content h2 {
+            border-bottom: 1px solid #000000;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            text-align: center; /* Aggiunto per centrare i titoli */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        
+        <nav class="mt-2 text-center"> <!-- Centrata la navigazione -->
+            <a href="#backrooms" class="mr-4">backrooms</a>
+            <a href="#date" class="mr-4">live</a>
+            <a href="#news" class="mr-4">news</a>
+            <a href="#dischi">download</a>
+            <img src="img/logo.jpg">
+        </nav>
+        <img src="img/logo.jpg" alt="Immagine di Intestazione" class="header-image"> <!-- Immagine di intestazione -->
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Sezione Prossime Date -->
+        <section id="date">
+            <h2 class="text-2xl">Prossime Date</h2>
+            <ul>
+                <li class="mb-4">
+                    <p>15 Settembre 2024 - Milano</p>
+                    <p><small>Circolo Magnolia</small></p>
+                </li>
+                <li class="mb-4">
+                    <p>22 Settembre 2024 - Roma</p>
+                    <p><small>Largo Venue</small></p>
+                </li>
+                <li class="mb-4">
+                    <p>29 Settembre 2024 - Napoli</p>
+                    <p><small>Casa della Musica</small></p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Sezione Download Dischi -->
+        <section id="dischi" class="mt-10">
+            <h2 class="text-2xl">Download Dischi</h2>
+            <ul>
+                <li class="mb-4">
+                    <p>Disco 1</p>
+                    <a href="path-to-disco1.zip" download>Scarica ZIP</a> | 
+                    <a href="path-to-disco1.mp3" download>Scarica MP3</a>
+                </li>
+                <li class="mb-4">
+                    <p>Disco 2</p>
+                    <a href="path-to-disco2.zip" download>Scarica ZIP</a> | 
+                    <a href="path-to-disco2.mp3" download>Scarica MP3</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="text-center">&copy; 2024 La Mia Band. Tutti i diritti riservati.</p> <!-- Centrato il footer -->
+    </footer>
+</body>
+</html>
